@@ -1,0 +1,6 @@
+
+
+Nueva simplificación, no genera huecos entre polígonos!  
+
+Paso de tener archivos de más de 50 MB a menos de 5 MB  
+
