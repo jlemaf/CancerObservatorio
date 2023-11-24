@@ -138,7 +138,7 @@ with col1:
         return chart
     
     chart=def_line(df)
-    #st.altair_chart(chart,use_container_width=True)
+    st.altair_chart(chart,use_container_width=True)
  
     st.divider()
 
@@ -170,7 +170,7 @@ with col1:
         return chart
 
     chart = def_hist(df)
-    #st.altair_chart(chart,use_container_width=True)
+    st.altair_chart(chart,use_container_width=True)
     st.divider()
 
 
@@ -257,7 +257,7 @@ st.header('Datos por tipo de cáncer (2016-2022)')
 
 sb_pie = st.selectbox('Seleccionar sexo', ('Todos','Mujer', 'Hombre'), key='pie_type',
              on_change=def_pie_type,args=(df,st.session_state.pie_type))
-#st.plotly_chart(def_pie_type(df,sb_pie), use_container_width=True)
+st.plotly_chart(def_pie_type(df,sb_pie), use_container_width=True)
 
 
 
@@ -282,7 +282,7 @@ fig.update_traces(orientation='h', side='positive', width=1, points=False)
 fig.update_layout(xaxis_showgrid=True, xaxis_zeroline=False,showlegend=False,
                   title="Defunciones por edad en tipos de cáncer", xaxis_title='EDAD')
 
-#st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, use_container_width=True)
 
 #fig = go.Figure()
 #for data_line, color in zip(data, colors):
